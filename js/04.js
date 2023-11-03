@@ -5,11 +5,11 @@ let numeros = 0;
 while (true) {
   let cadena = prompt("Ingrese una cadena:");
   if (cadena !== null) {
-    cadena = Number(cadena);
-    if (typeof cadena === "number") {
-      numeros += cadena;
-    } else {
+    cadena = parseInt(cadena);
+    if (isNaN(cadena)) {
       alert("Formato no valido");
+    } else {
+      numeros += cadena;
     }
   } else {
     break;
