@@ -4,10 +4,8 @@ Nota: usar confirm()
  */
 
 let cadenas = "";
-
 while (true) {
   const cadena = prompt("Ingrese una cadena:");
-
   if (cadena !== null) {
     cadenas += cadena + " - ";
   } else {

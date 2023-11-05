@@ -2,14 +2,12 @@
 
 const texto = prompt("Ingresa un texto:");
 let textoConGuiones = "";
-
 for (let i = 0; i < texto.length; i++) {
   textoConGuiones += texto[i];
   if (i < texto.length - 1) {
     textoConGuiones += "-";
   }
 }
-
 document.write(
   `El texto original "${texto}" y el texto con guiones "${textoConGuiones}"`
 );

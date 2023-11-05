@@ -3,7 +3,6 @@
 
 let ingresFrase = prompt("Ingrese su frase");
 let fraseAlReves = ingresFrase.split("").reverse().join("");
-
 document.write(
   `La frase original es "${ingresFrase}" y al reves  es "${fraseAlReves}"`
 );

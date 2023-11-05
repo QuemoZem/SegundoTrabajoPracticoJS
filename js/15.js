@@ -4,7 +4,6 @@ let contador = 0;
 let vocales = ["a", "e", "i", "o", "u"];
 let ingresoTexto = prompt("Ingrese un texto");
 let textoEnMinusculas = ingresoTexto.toLocaleLowerCase();
-
 for (let i = 0; i <= textoEnMinusculas.length; i++) {
   if (vocales.includes(textoEnMinusculas[i])) {
     contador++;

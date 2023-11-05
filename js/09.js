@@ -24,7 +24,6 @@ for (let i = 1; i <= 500; i++) {
     multiplo += " (Multiplo de 9)";
   }
   document.write(multiplo);
-
   if (i % 5 === 0) {
     document.write(`<br>----------------------------------------- <br>`);
   } else {

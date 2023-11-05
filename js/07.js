@@ -10,7 +10,6 @@
  */
 
 let ingresoUsuario = parseInt(prompt("Ingrese un numero entre 0 y 50"));
-
 if (ingresoUsuario > 0 && ingresoUsuario < 50) {
   for (let i = ingresoUsuario; i > 0; i--) {
     let linea = "";

@@ -3,7 +3,6 @@
 
 let ingresoFrase = prompt("Ingrese su frase");
 let vocalesComparar = "aeiou";
-
 for (let i = 0; i < ingresoFrase.length; i++) {
   if (vocalesComparar.includes(ingresoFrase[i].toLowerCase())) {
     document.write(

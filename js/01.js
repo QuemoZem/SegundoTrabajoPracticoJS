@@ -2,7 +2,6 @@
 la edad ingresada no es un número válido indicarlo en un mensaje. */
 
 const edadUsuario = parseInt(prompt("Ingrese su edad"));
-
 if (typeof edadUsuario === "Number") {
   if (edadUsuario > 18) {
     document.write("Usted puede conducir");

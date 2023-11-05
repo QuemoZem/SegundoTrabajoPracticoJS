@@ -17,7 +17,6 @@ Input: hola10                Output: Introduce un número válido
  */
 
 const notaUsuario = parseInt(prompt("Ingrese una nota entre 0 - 10"));
-
 if (isNaN(notaUsuario)) {
   alert("Ingrese un numero valido, solo numeros");
 } else if (typeof notaUsuario === "number") {
