@@ -3,26 +3,35 @@
 let saldo = 0;
 let extraccion = 0;
 
-let opcion = prompt(
-  `Ingrese una opcion:\n1) Consultar Saldo\n2) Ingresar Dinero\n3) Extraer Dinero`
-);
+while (true) {
+  let opcion = prompt(
+    `Ingrese una opcion:\n1) Consultar Saldo\n2) Ingresar Dinero\n3) Extraer Dinero\n4)- Salir`
+  );
+  switch (opcion) {
+    case "1":
+      consultarSaldo();
+      break;
+    case "2":
+      ingresarDinero();
+      break;
+    case "3":
+      extraerDinero();
+      break;
+    case "4":
+      break;
 
-switch (opcion) {
-  case "1":
-    consultarSaldo();
+    default:
+      alert("La opcion ingresada es incorrecta");
+  }
+  if (opcion == 4) {
     break;
-  case "2":
-    ingresarDinero();
-    break;
-  case "3":
-    extraerDinero();
-    break;
-  default:
-    alert("La opcion ingresada es incorrecta");
+  }
 }
-
+document.write(
+  `<h2>Gracias por usar nuestro sistema de cajeros automaticos</h2>`
+);
 function consultarSaldo() {
-  document.write(`Su saldo es de ${saldo}`);
+  alert(`Su saldo es de ${saldo}`);
 }
 
 function ingresarDinero() {
@@ -32,7 +41,7 @@ function ingresarDinero() {
 
   if (!isNaN(montoIngreso) && montoIngreso > 0) {
     saldo += montoIngreso;
-    document.write(`Su saldo actual es: ${saldo}`);
+    alert(`Su saldo actual es: ${saldo}`);
   } else {
     alert("Ingrese un monto válido.");
   }
